@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+
+}
+body{
+  padding: 5px 0;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(https://images4.newscred.com/Zz1kNmFkYmFmNzhlNGIxMWViYTU1ZDFmYjg0ZWI5MTc4Zg==);
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+
+.container {
+  max-width: 1536px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(50px);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+h3{
+  font-size: 1.5rem;
+}
+i{
+  display: none !important;
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+}
+li{
+  font-size: 1.2rem;
+  position: relative; 
+  font-weight: 600;
+}
+
+li:hover::after{
+  width: 100%;
+  border: 1px solid black;
+  transition: all .5s;
+}
+
+
+li::after{
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: 0px solid black;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+    
+  }
+
+  i{
+    display: block !important;
+  }
+  ul{
+    width: 100%;
+    list-style-type: none;
+    position: absolute;
+    display: block;
+    top: -400%;
+    left: 0;
+    gap: 2rem;
+    cursor: pointer;
+    transition: all .5s;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+  }
+  .ulclas{
+    top: 110%;
+    z-index: -1;
+  }
+  li{
+    font-size: 2rem;
+    position: relative; 
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  li:hover::after{
+    width: 100%;
+    border: 1px solid black;
+    transition: all .5s;
+  }
+  
+  
+  li::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 0px solid black;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}
