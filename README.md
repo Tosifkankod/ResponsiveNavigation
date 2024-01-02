@@ -1,1 +1,1 @@
-![alt text](https://github.com/Tosifkankod/ResponsiveNavigation/blob/main/nav.png?raw=true)
+![alt text](https://github.com/Tosifkankod/ResponsiveNavigation/blob/master/nav.png?raw=true)
